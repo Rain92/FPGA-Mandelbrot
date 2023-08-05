@@ -5,9 +5,9 @@ PATH_DESIGN2 = $(ROOT_DIR)/../rtl/hdmi
 SOURCE_MAIN_VGA_V = top_vga_sim.sv
 SOURCE_MAIN_HDMI_V = top_hdmi_sim.sv
 
-FLAGS := -Wall -Wno-TIMESCALEMOD -Wno-UNUSED  --trace -cc 
+FLAGS := -Wall -Wno-TIMESCALEMOD -Wno-UNUSED -Wno-fatal --trace -cc
 CFLAGS := -Os
-LDFLAGS  := -L$(ROOT_DIR)/minifb/build/ -lX11 -lminifb
+LDFLAGS  := -L$(ROOT_DIR)/minifb/build -lminifb -lX11
 
 all: vgasim_vga_window Vvgasim_vga_bitmap vgasim_hdmi_window
 

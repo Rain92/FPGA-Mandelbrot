@@ -1,0 +1,3 @@
+[submodule "sim/minifb"]
+	path = sim/minifb
+	url = git@github.com:emoon/minifb.git
