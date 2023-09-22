@@ -26,7 +26,8 @@ It uses MiniFb to display the video frames in real time in a window and also inc
 To run the simulator MiniFB has to be built first:
 
 ```
-cd sim\minifb
+git submodule update --init --recursive
+cd sim/minifb
 mkdir build
 cd build
 cmake .. -DUSE_OPENGL_API=OFF -DUSE_WAYLAND_API=OFF
